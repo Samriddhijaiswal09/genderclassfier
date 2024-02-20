@@ -7,16 +7,14 @@ Original file is located at
     https://colab.research.google.com/drive/1H-AE7BnL9B1t1c3OBWGuNpGbqBrvjnOO
 """
 
-!pip install -q streamlit
 
 import pickle
 import streamlit as st
 
-pip install streamlit-option-menu
 
 from streamlit_option_menu import option_menu
 
-genderclassification_model = pickle.load(open('/content/best_model.sav','rb'))
+genderclassification_model = pickle.load(open('best_model.sav','rb'))
 
 with st.sidebar:
 
